@@ -17,8 +17,8 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 11
-      - run: "mvn com.coveo:fmt-maven-plugin:format"
       - run: "env"
+      - run: "mvn com.coveo:fmt-maven-plugin:format"
       - uses: googleapis/code-suggester@v1
         with:
           command: review
